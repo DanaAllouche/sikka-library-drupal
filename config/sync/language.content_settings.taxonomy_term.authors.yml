@@ -1,0 +1,11 @@
+uuid: c2e266f4-e9d5-446a-aa43-d5b575a59dfb
+langcode: en-gb
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.authors
+id: taxonomy_term.authors
+target_entity_type_id: taxonomy_term
+target_bundle: authors
+default_langcode: site_default
+language_alterable: false
