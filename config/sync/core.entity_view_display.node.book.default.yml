@@ -4,6 +4,8 @@ status: true
 dependencies:
   config:
     - field.field.node.book.body
+    - field.field.node.book.field_authors
+    - field.field.node.book.field_pdf
     - node.type.book
   module:
     - text
@@ -18,12 +20,29 @@ content:
     label: hidden
     settings: {  }
     third_party_settings: {  }
-    weight: 101
+    weight: 0
+    region: content
+  field_authors:
+    type: entity_reference_label
+    label: inline
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_pdf:
+    type: entity_reference_entity_view
+    label: inline
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    weight: 2
     region: content
   links:
     settings: {  }
     third_party_settings: {  }
-    weight: 100
+    weight: 3
     region: content
 hidden:
   langcode: true
