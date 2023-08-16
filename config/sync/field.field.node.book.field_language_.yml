@@ -1,0 +1,21 @@
+uuid: 310f5700-b793-4b47-ba02-0e584279891e
+langcode: en-gb
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_language_
+    - node.type.book
+  module:
+    - options
+id: node.book.field_language_
+field_name: field_language_
+entity_type: node
+bundle: book
+label: 'Language '
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

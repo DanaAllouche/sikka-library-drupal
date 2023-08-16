@@ -1,0 +1,23 @@
+uuid: 0ae30a45-a17f-4601-86f1-5689d67d5cfb
+langcode: en-gb
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_availability
+    - node.type.book
+id: node.book.field_availability
+field_name: field_availability
+entity_type: node
+bundle: book
+label: Availability
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'Available '
+  off_label: 'Unavailable '
+field_type: boolean

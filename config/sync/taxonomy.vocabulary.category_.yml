@@ -1,0 +1,8 @@
+uuid: d60d39c9-cf74-4628-a801-8987bf5dac12
+langcode: en-gb
+status: true
+dependencies: {  }
+name: Category
+vid: category_
+description: 'Book Categories '
+weight: 0
