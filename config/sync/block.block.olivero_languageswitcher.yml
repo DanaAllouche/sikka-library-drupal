@@ -1,4 +1,4 @@
-uuid: 1a3b8542-7335-41a4-98b6-e261b9fb09e3
+uuid: 01677229-ef1c-45e1-ae44-c2991343e35b
 langcode: en-gb
 status: true
 dependencies:
@@ -8,7 +8,7 @@ dependencies:
     - olivero
 id: olivero_languageswitcher
 theme: olivero
-region: footer_bottom
+region: content_below
 weight: 0
 provider: null
 plugin: 'language_block:language_interface'

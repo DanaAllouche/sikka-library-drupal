@@ -1,0 +1,20 @@
+uuid: 779477eb-85f3-4457-96f7-c0c74041ccd4
+langcode: en-gb
+status: true
+dependencies:
+  module:
+    - language
+  theme:
+    - dana
+id: dana_languageswitcher_2
+theme: dana
+region: header
+weight: 0
+provider: null
+plugin: 'language_block:language_interface'
+settings:
+  id: 'language_block:language_interface'
+  label: 'Language switcher'
+  label_display: visible
+  provider: language
+visibility: {  }

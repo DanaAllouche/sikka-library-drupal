@@ -1,0 +1,21 @@
+uuid: 94d7a01a-67c5-42f8-8a61-a1531cae5f1d
+langcode: en-gb
+status: true
+dependencies:
+  module:
+    - search
+  theme:
+    - olivero
+id: olivero_searchform
+theme: olivero
+region: footer_bottom
+weight: 0
+provider: null
+plugin: search_form_block
+settings:
+  id: search_form_block
+  label: 'Search '
+  label_display: visible
+  provider: search
+  page_id: ''
+visibility: {  }

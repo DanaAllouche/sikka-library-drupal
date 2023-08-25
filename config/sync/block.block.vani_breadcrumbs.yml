@@ -1,17 +1,17 @@
-uuid: 56bed613-74ea-42d0-8ded-4e32fa8fb657
-langcode: en-gb
+uuid: 26fc303b-7e87-45b0-ba91-a1b9767ad643
+langcode: en
 status: true
 dependencies:
   module:
     - system
   theme:
-    - olivero
+    - vani
 _core:
-  default_config_hash: VhBzWb7lMRtIOg9G7VSw_0uopi-7zXeHq4vXqqV1HFE
-id: olivero_breadcrumbs
-theme: olivero
-region: breadcrumb
-weight: 0
+  default_config_hash: s70XdZoJ_p7c5HMD8qwb4ZBdBUrqsMPFEq_WQx2j0IQ
+id: vani_breadcrumbs
+theme: vani
+region: page_header
+weight: -5
 provider: null
 plugin: system_breadcrumb_block
 settings:

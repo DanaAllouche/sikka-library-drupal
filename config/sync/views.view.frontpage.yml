@@ -25,7 +25,7 @@ display:
     display_plugin: default
     position: 0
     display_options:
-      title: 'Welcome to Sikka Library !'
+      title: ''
       fields:
         field_image_:
           id: field_image_
@@ -192,7 +192,7 @@ display:
       access:
         type: perm
         options:
-          perm: 'view own unpublished content'
+          perm: 'access content'
       cache:
         type: tag
         options: {  }
@@ -361,21 +361,20 @@ display:
             default_group_multiple: {  }
             group_items: {  }
       style:
-        type: grid
+        type: grid_responsive
         options:
           grouping: {  }
           columns: 4
-          automatic_width: true
+          cell_min_width: 100
+          grid_gutter: 10
           alignment: horizontal
-          row_class_custom: ''
-          row_class_default: true
-          col_class_custom: ''
-          col_class_default: true
       row:
         type: fields
         options:
           default_field_elements: true
-          inline: {  }
+          inline:
+            field_image_: field_image_
+            title: title
           separator: ''
           hide_empty: false
       query:
@@ -449,7 +448,7 @@ display:
         style: true
         row: true
       display_extenders: {  }
-      path: node
+      path: 'http://localhost/node/12'
     cache_metadata:
       max-age: -1
       contexts:

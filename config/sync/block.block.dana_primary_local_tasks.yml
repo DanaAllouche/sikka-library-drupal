@@ -1,0 +1,22 @@
+uuid: 7d6e4e32-55d8-4e45-a5ee-62f79ef435d3
+langcode: en-gb
+status: true
+dependencies:
+  theme:
+    - dana
+_core:
+  default_config_hash: nGE3EoPQQaQCuqTUtZgw0-KIzmrqdKDzdNQf2JyPUt4
+id: dana_primary_local_tasks
+theme: dana
+region: highlighted
+weight: -4
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: 'Primary tabs'
+  label_display: '0'
+  provider: core
+  primary: true
+  secondary: false
+visibility: {  }

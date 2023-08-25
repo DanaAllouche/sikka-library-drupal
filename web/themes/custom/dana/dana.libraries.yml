@@ -1,0 +1,10 @@
+# Dana sub theme library.
+global-styling:
+  js:
+    js/theme.js: {}
+  css:
+    theme:
+      css/theme.css: {}
+  dependencies: 
+    - core/jquery
+  

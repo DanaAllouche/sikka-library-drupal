@@ -3,11 +3,9 @@ langcode: en-gb
 status: true
 dependencies:
   config:
-    - field.storage.node.body
     - field.storage.node.field_authors
     - field.storage.node.field_availability
     - field.storage.node.field_date_of_publication
-    - field.storage.node.field_number_of_pages_
     - field.storage.node.field_pdf
     - node.type.book
     - taxonomy.vocabulary.category_
@@ -15,7 +13,6 @@ dependencies:
     - datetime
     - node
     - taxonomy
-    - text
     - user
 id: book_list
 label: 'Book List'
@@ -161,68 +158,6 @@ display:
           multi_type: separator
           separator: ', '
           field_api_classes: false
-        body:
-          id: body
-          table: node__body
-          field: body
-          relationship: none
-          group_type: group
-          admin_label: ''
-          plugin_id: field
-          label: 'Description '
-          exclude: false
-          alter:
-            alter_text: false
-            text: ''
-            make_link: false
-            path: ''
-            absolute: false
-            external: false
-            replace_spaces: false
-            path_case: none
-            trim_whitespace: false
-            alt: ''
-            rel: ''
-            link_class: ''
-            prefix: ''
-            suffix: ''
-            target: ''
-            nl2br: false
-            max_length: 0
-            word_boundary: true
-            ellipsis: true
-            more_link: false
-            more_link_text: ''
-            more_link_path: ''
-            strip_tags: false
-            trim: false
-            preserve_tags: ''
-            html: false
-          element_type: ''
-          element_class: ''
-          element_label_type: ''
-          element_label_class: ''
-          element_label_colon: true
-          element_wrapper_type: ''
-          element_wrapper_class: ''
-          element_default_classes: true
-          empty: ''
-          hide_empty: false
-          empty_zero: false
-          hide_alter_empty: true
-          click_sort_column: value
-          type: text_default
-          settings: {  }
-          group_column: value
-          group_columns: {  }
-          group_rows: true
-          delta_limit: 0
-          delta_offset: 0
-          delta_reversed: false
-          delta_first_last: false
-          multi_type: separator
-          separator: ', '
-          field_api_classes: false
         field_availability:
           id: field_availability
           table: node__field_availability
@@ -278,70 +213,6 @@ display:
             format: default
             format_custom_false: ''
             format_custom_true: ''
-          group_column: value
-          group_columns: {  }
-          group_rows: true
-          delta_limit: 0
-          delta_offset: 0
-          delta_reversed: false
-          delta_first_last: false
-          multi_type: separator
-          separator: ', '
-          field_api_classes: false
-        field_number_of_pages_:
-          id: field_number_of_pages_
-          table: node__field_number_of_pages_
-          field: field_number_of_pages_
-          relationship: none
-          group_type: group
-          admin_label: ''
-          plugin_id: field
-          label: 'Number of Pages '
-          exclude: false
-          alter:
-            alter_text: false
-            text: ''
-            make_link: false
-            path: ''
-            absolute: false
-            external: false
-            replace_spaces: false
-            path_case: none
-            trim_whitespace: false
-            alt: ''
-            rel: ''
-            link_class: ''
-            prefix: ''
-            suffix: ''
-            target: ''
-            nl2br: false
-            max_length: 0
-            word_boundary: true
-            ellipsis: true
-            more_link: false
-            more_link_text: ''
-            more_link_path: ''
-            strip_tags: false
-            trim: false
-            preserve_tags: ''
-            html: false
-          element_type: ''
-          element_class: ''
-          element_label_type: ''
-          element_label_class: ''
-          element_label_colon: false
-          element_wrapper_type: ''
-          element_wrapper_class: ''
-          element_default_classes: true
-          empty: ''
-          hide_empty: false
-          empty_zero: false
-          hide_alter_empty: true
-          click_sort_column: value
-          type: number_integer
-          settings:
-            thousand_separator: ''
-            prefix_suffix: true
           group_column: value
           group_columns: {  }
           group_rows: true
@@ -616,7 +487,7 @@ display:
       access:
         type: perm
         options:
-          perm: 'access content'
+          perm: 'view the administration theme'
       cache:
         type: tag
         options: {  }
@@ -768,7 +639,7 @@ display:
           exposed: true
           expose:
             operator_id: combine_op
-            label: Search
+            label: 'Combine fields filter'
             description: ''
             use_operator: false
             operator: combine_op
@@ -798,7 +669,6 @@ display:
             group_items: {  }
           fields:
             title: title
-            body: body
       style:
         type: table
         options:
@@ -808,9 +678,7 @@ display:
           columns:
             title: title
             field_authors: field_authors
-            body: body
             field_availability: field_availability
-            field_number_of_pages_: field_number_of_pages_
             field_date_of_publication: field_date_of_publication
             field_pdf: field_pdf
             delete_node: delete_node
@@ -829,22 +697,8 @@ display:
               separator: ''
               empty_column: false
               responsive: ''
-            body:
-              sortable: false
-              default_sort_order: asc
-              align: views-align-center
-              separator: ''
-              empty_column: false
-              responsive: ''
             field_availability:
               sortable: false
-              default_sort_order: asc
-              align: views-align-center
-              separator: ''
-              empty_column: false
-              responsive: ''
-            field_number_of_pages_:
-              sortable: true
               default_sort_order: asc
               align: views-align-center
               separator: ''
@@ -896,6 +750,7 @@ display:
           query_tags: {  }
       relationships: {  }
       use_ajax: true
+      show_admin_links: false
       header: {  }
       footer:
         messages:
@@ -932,11 +787,9 @@ display:
         - 'user.node_grants:view'
         - user.permissions
       tags:
-        - 'config:field.storage.node.body'
         - 'config:field.storage.node.field_authors'
         - 'config:field.storage.node.field_availability'
         - 'config:field.storage.node.field_date_of_publication'
-        - 'config:field.storage.node.field_number_of_pages_'
         - 'config:field.storage.node.field_pdf'
   page_1:
     id: page_1
@@ -957,9 +810,7 @@ display:
         - 'user.node_grants:view'
         - user.permissions
       tags:
-        - 'config:field.storage.node.body'
         - 'config:field.storage.node.field_authors'
         - 'config:field.storage.node.field_availability'
         - 'config:field.storage.node.field_date_of_publication'
-        - 'config:field.storage.node.field_number_of_pages_'
         - 'config:field.storage.node.field_pdf'

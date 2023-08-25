@@ -1,0 +1,21 @@
+uuid: e29aa727-527b-41ec-8adb-72226becd0e1
+langcode: en-gb
+status: true
+dependencies:
+  module:
+    - search
+  theme:
+    - dana
+id: dana_searchform_3
+theme: dana
+region: primary_menu
+weight: 0
+provider: null
+plugin: search_form_block
+settings:
+  id: search_form_block
+  label: 'Search form'
+  label_display: visible
+  provider: search
+  page_id: ''
+visibility: {  }

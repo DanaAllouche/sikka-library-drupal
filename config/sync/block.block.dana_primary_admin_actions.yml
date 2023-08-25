@@ -1,0 +1,20 @@
+uuid: e03051dd-131f-4cf4-88f3-6b8dab2d9ad0
+langcode: en-gb
+status: true
+dependencies:
+  theme:
+    - dana
+_core:
+  default_config_hash: Q9_2whdOj1YIomfvsIfopROW4FT_X5pY0DjdOiOaQ5U
+id: dana_primary_admin_actions
+theme: dana
+region: highlighted
+weight: -5
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  label_display: '0'
+  provider: core
+visibility: {  }

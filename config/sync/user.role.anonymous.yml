@@ -22,3 +22,4 @@ permissions:
   - 'search content'
   - 'use text format restricted_html'
   - 'view media'
+  - 'view the administration theme'

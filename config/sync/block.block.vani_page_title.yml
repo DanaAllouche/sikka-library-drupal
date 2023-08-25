@@ -1,0 +1,20 @@
+uuid: bceb3659-123c-4d82-8094-b4b589e0f2d8
+langcode: en
+status: true
+dependencies:
+  theme:
+    - vani
+_core:
+  default_config_hash: eygL-_5_izUstAfyRFzbpxlSsJTMbu_kbOGpqzA7cmg
+id: vani_page_title
+theme: vani
+region: page_header
+weight: -6
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  label_display: '0'
+  provider: core
+visibility: {  }

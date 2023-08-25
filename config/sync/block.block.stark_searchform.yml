@@ -1,0 +1,21 @@
+uuid: a38f7587-8ce2-430e-966d-3d882cd9a74a
+langcode: en-gb
+status: true
+dependencies:
+  module:
+    - search
+  theme:
+    - stark
+id: stark_searchform
+theme: stark
+region: sidebar_first
+weight: 0
+provider: null
+plugin: search_form_block
+settings:
+  id: search_form_block
+  label: 'Search '
+  label_display: visible
+  provider: search
+  page_id: ''
+visibility: {  }

@@ -1,0 +1,8 @@
+uuid: 2f573b83-2792-4851-b174-9096de09d4af
+langcode: en-gb
+status: true
+dependencies: {  }
+id: shortcut
+label: Shortcut
+description: ''
+locked: false

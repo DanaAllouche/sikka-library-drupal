@@ -16,9 +16,14 @@
     ],
     "require": {
         "composer/installers": "^2.0",
+        "drupal/background_image": "^2.0",
+        "drupal/bootstrap_barrio": "^5.5",
         "drupal/core-composer-scaffold": "^10.1",
         "drupal/core-project-message": "^10.1",
         "drupal/core-recommended": "^10.1",
+        "drupal/gin": "^3.0@RC",
+        "drupal/gin_toolbar": "^1.0@RC",
+        "drupal/tara": "^10.0",
         "drupal/webform": "^6.2@beta",
         "drush/drush": "^12.1"
     },
